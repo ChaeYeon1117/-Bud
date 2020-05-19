@@ -66,16 +66,20 @@
     <![endif]-->
 
 	<style>
-		.graph {overflow: hidden}
+		.graph {overflow: hidden; padding: 0 0 10px;}
 		.graph p {text-align: left; float: left; width: 180px;}
-		.graph div{float: left; width:calc(100% - 180px); padding: 0 0 10px;}
+		.graph div{float: left; width:calc(100% - 180px);background-color: #ccc; border-radius: 50px}
 		.graph span {display: block; padding: 0 10px;height: 40px; line-height: 40px; text-align: right;  border-radius: 40px; box-sizing: border-box; color: white; background-color: #ccc;}
-		.graph.stack1 span{animation: stack 2s 1;background: #91CB7B;}
-		.graph.stack2 span{animation: stack2 2s 1;background: #5FBA47;}
-		.graph.stack3 span{animation: stack3 2s 1;background: #58BA6D;}
-		.graph.stack4 span{animation: stack4 2s 1;background: #34AC4A;}
+		.graph.a1 span{background: #91CB7B;}
+		.graph.a2 span{background: #5FBA47;}
+		.graph.a3 span{background: #58BA6D;}
+		.graph.a4 span{background: #34AC4A;}
 
-		@keyframes stack{
+.stack1 { animation-name: stack1; animation-duration: 1s; }
+.stack2 { animation-name: stack2; animation-duration: 1s; }
+.stack3 { animation-name: stack3; animation-duration: 1s; }
+
+		@keyframes stack1{
 			0%{width: 0%; color: rgba(255,255,255,0);}
 			100%{width: 95%; color: rgba(255,255,255,1);}
 		}
@@ -183,24 +187,24 @@
                     </div>
                 </div>
 -->
-				<div class="container" style="text-align: center; margin: 0auto;">
-					<div class="graph stack1">
-						<p href="#none">Illustrator/Photoshop</p>
-						<div><span style="width: 95%">95%</span></div>
-					</div>
-					<div class="graph stack2">
-						<p href="#none">html5 / css</p>
-						<div><span style="width: 80%">80%</span></div>
-					</div>
-					<div class="graph stack3">
-						<p href="#none">jQuery</p>
-						<div><span style="width: 70%">70%</span></div>
-					</div>
-					<div class="graph stack3">
-						<p href="#none">Bootstrap</p>
-						<div><span style="width: 70%">70%</span></div>
-					</div>
-				</div>
+        				<div class="container" style="text-align: center; margin: 0auto;">
+        					<div class="graph a1">
+        						<p href="#none">Illustrator/Photoshop</p>
+        						<div><span class="wow stack1" style="width: 95%">95%</span></div>
+        					</div>
+        					<div class="graph a2">
+        						<p href="#none">html5 / css</p>
+        						<div><span class="wow stack2" style="width: 80%">80%</span></div>
+        					</div>
+        					<div class="graph a3">
+        						<p href="#none">jQuery</p>
+        						<div><span class="wow stack3" style="width: 70%">70%</span></div>
+        					</div>
+        					<div class="graph a4">
+        						<p href="#none">Bootstrap</p>
+        					<div><span class="wow stack3" style="width: 70%">70%</span></div>
+        					</div>
+        				</div>
             </div>
         </div>
     </section>
